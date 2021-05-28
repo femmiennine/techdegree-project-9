@@ -1,0 +1,77 @@
+/* Basic Style */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Search Bar */
+
+.search-bar {
+  text-align: center;
+  margin: 30px;
+}
+
+#search {
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: 8px;
+  width: 50%;
+}
+
+#search:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  color: lightgray;
+  font-size: 1em;
+}
+
+/* Gallery */
+
+.gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.lb-image {
+  max-width: inherit;
+}
+.gallery img {
+  text-align: center;
+  filter: grayscale(100%);
+  transition: 1s;
+  list-style-type: none;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    flex-direction: row;
+  }
+
+  img {
+    padding: 20px;
+  }
+}
