@@ -12,7 +12,6 @@ a {
 
 body {
   background: #c31432;
-  background: -webkit-linear-gradient(to right, #240b36, #c31432);  
   background: linear-gradient(to right, #240b36, #c31432);
   min-height: 100vh;
   margin: 20px;
@@ -413,7 +412,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .contact {
