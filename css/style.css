@@ -13,12 +13,10 @@ a {
 body {
   background: #c31432;
   background: linear-gradient(to right, #240b36, #c31432);
-  min-height: 100vh;
   margin: 20px;
 }
 
 .portfolio-main {
-  min-height: 100vh;
   background: linear-gradient(
     153.28deg,
     rgba(255, 255, 255, 0.4) 1.19%,
@@ -521,8 +519,7 @@ textarea {
 
   .experience-section,
   .contact-section {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
   }
 
   .projects {
