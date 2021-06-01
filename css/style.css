@@ -147,41 +147,43 @@ nav {
 }
 
 .col-left {
-  margin-top: 50px;
+  max-width: 100%;
+  margin: 20px auto;
 }
 
 .col-left h1 {
   font-family: cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: black;
   line-height: 1.5rem; 
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .col-left span {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: normal;
   color: black;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .col-left p {
   width: 100%;
   font-weight: normal;
-  font-size: 16px;
+  font-size: .8rem;
   line-height: 145%;
   color: rgb(2, 2, 2);
   margin-bottom: 20px;
-  letter-spacing: 0.01em;
   text-align: justify;
 }
 
 /* Skills */
 .skills-section {
-  width: fit-content;
+  max-width: 100%;
   padding: 10px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -194,25 +196,24 @@ nav {
 }
 
 .skills-section .icon {
-  max-height: 25px;
-  max-width: 25px;
-  margin-right: 25px;
+  max-height: 20px;
+  max-width: 20px;
+  margin-right: 10px;
 }
 
 /* See My Work BUtton */
 a.btn-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 13px 25px;
+  padding: 10px 20px;
   background: #292423;
-  width: 190px;
+  max-width: 150px;
   border-radius: 50px;
   color: #fff;
-  font-size: 16px;
+  font-size: .8rem;
   line-height: 22px;
   font-weight: 500;
-  text-transform: capitalize;
   margin-top: 10px;
   margin-bottom: 30px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
@@ -233,7 +234,7 @@ a.btn-main span {
   text-align: center;
 }
 a.btn-main span img {
-  margin-bottom: 7px;
+  margin: 5px;
 }
 a.btn-main:hover span {
   background: #ccc;
@@ -241,7 +242,7 @@ a.btn-main:hover span {
 
 /* Experience  */
 .experience-section {
-  width: 100%;
+  max-width: 100%;
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -285,8 +286,8 @@ a.btn-main:hover span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  margin: 10px auto;
+  max-width: 100%;
+  margin: 10px;
 }
   
 .projects .col {
@@ -295,8 +296,7 @@ a.btn-main:hover span {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 20px;
-  padding: 20px;
+  max-width: 100%;
 }
 
 .projects .thumbnail {
@@ -304,7 +304,7 @@ a.btn-main:hover span {
   filter: grayscale(100%);
   transition: 1s;
   list-style-type: none;
-  width: 200px;
+  max-width: 100%;
 }
 
 .projects .thumbnail:hover {
@@ -328,8 +328,7 @@ a.btn-main:hover span {
 
 /* Contact Me */
 .contact-section {
-  width: 100%;
-  padding: 40px 40px;
+  max-width: 100%;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin: 30px auto;
@@ -346,8 +345,9 @@ a.btn-main:hover span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px;
   align-items: center;
+  max-width: 100%;
 }
 
 .row .message {
@@ -355,7 +355,7 @@ a.btn-main:hover span {
   box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
   border-radius: 1rem;
   display: block;
-  padding: 20px;
+  margin: 0 5px;
 }
 
 .box {
@@ -366,7 +366,7 @@ a.btn-main:hover span {
 input {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 5px;
   color:black;
   font-weight: bold;
@@ -396,16 +396,16 @@ textarea {
   color: white;
   border: 1px solid #0f2027;
   width: 40%;
+  margin-left: 10px;
 }
 
 /* Contact Info */
 .contact-info {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  padding: 20px;;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .contact-text {
@@ -413,6 +413,7 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .contact {
@@ -421,8 +422,8 @@ textarea {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  font-size: 1rem;
+  margin: 10px 15px;
+  font-size: .8rem;
 }
 
 .contact img {
@@ -441,7 +442,7 @@ textarea {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 20px;
+  margin: 10px 20px;
 }
 
 .social-media a {
@@ -450,7 +451,8 @@ textarea {
   list-style: none;
   color: black;
   font-size: 1.5rem;
-  margin: 10px auto;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 
@@ -489,10 +491,6 @@ textarea {
     margin-right: 45px;
   }
 
-  .skills-section {
-    width: fit-content;
-  }
-
   .main-content-wrapper {
     flex-direction: row;
     width: 100%;
@@ -501,6 +499,24 @@ textarea {
 
   .col-left {
     width: 70%;
+  }
+
+  .col-left h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 25px;
+  }
+
+  .col-left span {
+    font-size: 1.2rem;
+  }
+  
+  .col-left p {
+    font-size: 1rem;
+  }
+
+  .skills-section {
+    width: fit-content;
   }
 
   .experience-section,
@@ -542,16 +558,16 @@ textarea {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    height: 600px;
   }
 
   .box {
     line-height: 2rem;
     width: 300px;
-    overflow: hidden;
   }
 
   textarea {
-    height: 300px;
+    height: 500px;
   }
 
   .contact-info {
@@ -560,11 +576,11 @@ textarea {
 
   .contact-text {
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .social-media a {
-    padding: 20px 40px;
+    padding: 20px;
     align-items: center;
   }
 }
