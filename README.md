@@ -1,6 +1,5 @@
 Capstone Portfolio
 
-# femmiennine.github.io
 techdegree project #9 (Capstone Portfolio)
 
 Project Instructions
